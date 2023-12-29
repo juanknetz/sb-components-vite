@@ -1,6 +1,6 @@
 import "./MyLabel.css";
 
-interface Props {
+export interface Props {
   /** Text to display */
   label: string;
 
@@ -17,7 +17,7 @@ interface Props {
   fontColor?: string;
 }
 
-const MyLabel = ({
+export const MyLabel = ({
   label,
   size = "normal",
   allCaps = false,
@@ -30,5 +30,3 @@ const MyLabel = ({
     </span>
   );
 };
-
-export default MyLabel;
