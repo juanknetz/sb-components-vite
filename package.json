@@ -13,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://jcnetz.com",
   "repository": {
-    "url": "https://github.com/juanknetz/jcnetz-my-storybook",
+    "url": "https://github.com/juanknetz/sb-components-vite",
     "type": "git"
   },
   "files": [
