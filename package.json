@@ -13,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://jcnetz.com",
   "repository": {
-    "url": "https://TODO...",
+    "url": "https://github.com/juanknetz/jcnetz-my-storybook",
     "type": "git"
   },
   "files": [
@@ -28,6 +28,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0 ",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
+  "engines":{
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -36,7 +39,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.6",
@@ -57,6 +61,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "np": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
